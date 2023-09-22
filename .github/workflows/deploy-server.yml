@@ -1,0 +1,31 @@
+name: Deploy Server
+
+on:
+  push:
+    branches:
+      - main  # Adjust to your main branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14  # Use the Node.js version you need
+
+      - name: Install dependencies
+        run: npm install  # Or use yarn if you prefer
+
+      - name: Build and deploy server
+        run: |
+          # Build and deploy your server here
+          # Replace these commands with your actual deployment process
+          npm start  # Start your Node.js server using "npm start"
+        working-directory: ../../server  # Specify the directory where your server.js is located
+
+      # Additional steps can be added if needed, such as running tests or deploying to a specific environment
