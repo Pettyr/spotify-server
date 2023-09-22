@@ -26,6 +26,6 @@ jobs:
           # Build and deploy your server here
           # Replace these commands with your actual deployment process
           npm start  # Start your Node.js server using "npm start"
-        working-directory: ./server # Specify the directory where your server.js is located
+        working-directory: ./ # Specify the directory where your server.js is located
 
       # Additional steps can be added if needed, such as running tests or deploying to a specific environment
