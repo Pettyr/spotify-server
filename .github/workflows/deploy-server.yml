@@ -23,6 +23,4 @@ jobs:
 
       - name: Build and deploy server
         run: npm start  
-        working-directory: ./ # Specify the directory where your server.js is located
 
-      # Additional steps can be added if needed, such as running tests or deploying to a specific environment
